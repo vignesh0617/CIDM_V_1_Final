@@ -20,7 +20,8 @@ class reconciliation_app:
         
     #used to read the environment.txt file and assign the values to reconciliation_app
     def assign_environment_details(self):
-        file = open(file = "app\environment.txt",mode ="r")
+        # file = open(file = "app\environment.txt",mode ="r")
+        file = open(file = "environment.txt",mode ="r")
         for line in file:
             if(line != "\n" and line.replace(" ","")!=""):
                 for[key,value] in [line.rstrip().split(" = ")]:

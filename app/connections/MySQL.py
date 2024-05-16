@@ -74,7 +74,8 @@ def get_backend_queries()-> list[str]:
         "DELIMITER //" : "END//"
     }
 
-    with open("app\connections\mysql_queries_final.txt","r") as file:
+    # with open("app\connections\mysql_queries_final.txt","r") as file:
+    with open("connections\mysql_queries_final.txt","r") as file:
         lines = file.readlines()
         queries = []
         for line in lines : 
